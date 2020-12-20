@@ -27,31 +27,31 @@ include "../user/connection.php";
                             <div class="control-group">
                                 <label class="control-label">First Name :</label>
                                 <div class="controls">
-                                    <input type="text" class="span11" placeholder="First name" name="firstname" />
+                                    <input type="text" class="span11" placeholder="First name" name="firstname" required/>
                                 </div>
                             </div>
                             <div class="control-group">
                                 <label class="control-label">Last Name :</label>
                                 <div class="controls">
-                                    <input type="text" class="span11" placeholder="Last name" name="lastname" />
+                                    <input type="text" class="span11" placeholder="Last name" name="lastname" required/>
                                 </div>
                             </div>
                             <div class="control-group">
                                 <label class="control-label">Username :</label>
                                 <div class="controls">
-                                    <input type="text" class="span11" placeholder="Username" name="username" />
+                                    <input type="text" class="span11" placeholder="Username" name="username" required/>
                                 </div>
                             </div>
                             <div class="control-group">
                                 <label class="control-label">Password:</label>
                                 <div class="controls">
-                                    <input type="password"  class="span11" placeholder="Enter Password"  name="password" />
+                                    <input type="password"  class="span11" placeholder="Enter Password"  name="password" required/>
                                 </div>
                             </div>
                             <div class="control-group">
                                 <label class="control-label">Select Role:</label>
                                 <div class="controls">
-                                    <select name="role" class="span11">
+                                    <select name="role" class="span11" required>
                                         <option>User</option>
                                         <option>Admin</option>
                                     </select>
