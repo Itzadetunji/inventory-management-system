@@ -92,13 +92,13 @@ while ($row = mysqli_fetch_array($res)) {
 </div>
 
 <?php 
-if (isset($_POST['submit1'])) {
-  mysqli_query($link, "insert into party_info values (NULL, '$_POST[firstname]','$_POST[lastname]','$_POST[businessname]','$_POST[contact]','$_POST[address]', '$_POST[city]')") or die(mysqli_error($link));
+if (isset($_POST["submit1"])) {
+  mysqli_query($link, "update party_info set firstname='$_POST[firstname]', lastname='$_POST[lastname]', businessname='$_POST[businessname]', contact='$_POST[contact]', address='$_POST[address]', city='$_POST[city]' where id=$id") or die(mysqli_error($link));
   ?>
   <script type="text/javascript">
     document.getElementById("success").style.display="block";
     setTimeout(function(){
-      window.location.href=window.location.href;
+      window.location="add_new_party.php";
     },3000);
   </script>
   <?php
