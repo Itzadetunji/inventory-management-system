@@ -71,6 +71,10 @@
                 <li>
                     <a href="add_new_party.php"><i class="icon icon-user"></i><span>Add New Party</span></a>
                 </li>
+
+                <li>
+                    <a href="purchase_master.php"><i class="icon icon-user"></i><span>Purchase Master</span></a>
+                </li>
                 <li class="submenu"><a href="#"><i class="icon icon-th-list"></i> <span>Forms</span> <span
                     class="label label-important">3</span></a>
                     <ul>
